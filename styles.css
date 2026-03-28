@@ -1,0 +1,64 @@
+:root {
+    --primary-color: #BD0FE7;
+    --secondary-color: #0F3D04;
+    --background-color: #32043D;
+    --text-color: #fff;
+    --font-family: 'Montserrat', sans-serif;
+}
+
+/*define styles to the body*/
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);    
+    margin: 0;
+}
+
+/*define styles to the header*/
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color : var(--text-color);
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    justify-content: center;    
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+}
+
+.container h1 {
+    font-size: 65px;
+}
+
+.text-secondary {
+  color: var(--primary-color) !important;
+  font-family: 'Odibee Sans', cursive;
+  font-size: 90px !important;
+}
+
+.go_timeline {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
