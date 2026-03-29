@@ -70,6 +70,7 @@ nav {
     display: flex;
     justify-content: center;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -112,6 +113,7 @@ nav a:hover::after {
 .container h1 {
     font-size: 65px;
     animation: slideInLeft 1s ease-in-out;
+    margin: 0.5rem;
 }
 
 .text-secondary {
@@ -119,6 +121,7 @@ nav a:hover::after {
   font-family: 'Odibee Sans', cursive;
   font-size: 90px !important;
   animation: slideInRight 1s ease-in-out;
+  margin: 0.5rem;
 }
 
 .container p {
@@ -303,4 +306,245 @@ footer {
 .footer-year {
     color: #aaa;
     font-size: 12px;
+}
+
+/* MEDIA QUERIES - Mobile Responsivo */
+
+/* Tablets (até 768px) */
+@media (max-width: 768px) {
+    .container {
+        height: auto;
+        padding: 3rem 1rem;
+        min-height: 70vh;
+    }
+
+    .container h1 {
+        font-size: 42px;
+    }
+
+    .text-secondary {
+        font-size: 56px !important;
+    }
+
+    .container p {
+        font-size: 16px;
+        padding: 0 1rem;
+    }
+
+    .go_timeline {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+
+    nav a {
+        font-size: 14px;
+        gap: 15px;
+    }
+
+    .sobre {
+        padding: 2rem 1rem;
+    }
+
+    .sobre h2 {
+        font-size: 24px;
+    }
+
+    .sobre-content {
+        gap: 1rem;
+    }
+
+    .sobre-text,
+    .so-img {
+        min-width: 100%;
+        flex: 1 1 100%;
+    }
+
+    .so-img {
+        margin-top: 1rem;
+    }
+
+    .linha-do-tempo {
+        padding: 2rem 1rem;
+    }
+
+    .linha-do-tempo h2 {
+        font-size: 24px;
+    }
+
+    .timeline-content p {
+        font-size: 16px;
+        padding: 0 1rem;
+    }
+
+    .timeline-image iframe {
+        height: 400px !important;
+    }
+
+    footer {
+        padding: 2rem 1rem;
+    }
+
+    .footer-section {
+        margin-bottom: 1rem;
+    }
+
+    .footer-section h3 {
+        font-size: 14px;
+    }
+
+    .footer-section p {
+        font-size: 12px;
+    }
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    nav {
+        gap: 10px;
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+
+    .container {
+        height: auto;
+        padding: 2rem 1rem;
+        min-height: 60vh;
+    }
+
+    .container h1 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .text-secondary {
+        font-size: 40px !important;
+        line-height: 1.2;
+    }
+
+    .container p {
+        font-size: 14px;
+        padding: 0;
+        line-height: 1.5;
+    }
+
+    .go_timeline {
+        padding: 10px 20px;
+        font-size: 14px;
+        margin-top: 1rem;
+    }
+
+    .sobre {
+        padding: 1.5rem 1rem;
+    }
+
+    .sobre h2 {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .sobre-text {
+        min-width: 100%;
+    }
+
+    .sobre-text p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .so-img {
+        min-width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    .so-img img {
+        max-width: 90%;
+    }
+
+    .linha-do-tempo {
+        padding: 1.5rem 1rem;
+    }
+
+    .linha-do-tempo h2 {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .timeline-content p {
+        font-size: 14px;
+        padding: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .timeline-image iframe {
+        height: 300px !important;
+    }
+
+    footer {
+        padding: 1.5rem 1rem;
+    }
+
+    .footer-content {
+        gap: 1rem;
+    }
+
+    .footer-section {
+        margin-bottom: 1rem;
+    }
+
+    .footer-section h3 {
+        font-size: 13px;
+        margin-bottom: 0.25rem;
+    }
+
+    .footer-section p {
+        font-size: 11px;
+    }
+
+    .footer-year {
+        font-size: 10px;
+        margin-top: 1rem;
+    }
+}
+
+/* Celulares muito pequenos (até 360px) */
+@media (max-width: 360px) {
+    .container h1 {
+        font-size: 24px;
+    }
+
+    .text-secondary {
+        font-size: 32px !important;
+    }
+
+    .container p {
+        font-size: 13px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .go_timeline {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+
+    .sobre-text p {
+        font-size: 13px;
+    }
+
+    .timeline-content p {
+        font-size: 13px;
+    }
 }
