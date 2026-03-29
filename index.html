@@ -8,7 +8,6 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/styles.css">
-    <script src='main.js'></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Odibee+Sans&display=swap" rel="stylesheet">
 </head>
@@ -31,21 +30,19 @@
         <button class="go_timeline">Linha do Tempo</button>
     </div>
 
-    <section class="sobre">
+    <section class="sobre" id="sobre">
         <h2>SOBRE</h2>
 
         <div class="sobre-content">
-          <div class="sobre-image">
-            <img src="/assets/images/computer.jpg" alt="Computer">
-          </div>
 
           <div class="sobre-text">
             <p>Um sistema operacional (SO) é o software fundamental que faz a ponte entre o
             hardware do computador e os programas que você usa no dia a dia. Sem ele, o
             computador seria apenas um conjunto de peças sem nenhuma utilidade 
             prática</p>
-
-            <img src="/assets/images/estrutura_sistema_operacional.png" alt="Estrutura do Sistema Operacional">
+                <div class="so-img">
+                    <img src="/assets/images/estrutura_sistema_operacional.png" alt="Estrutura do Sistema Operacional">
+                </div>
 
             <p> Pense assim: o SO é como o gerente de um prédio —
                ele organiza quem usa cada sala (memória), controla o elevador 
@@ -56,14 +53,23 @@
         
     </section>
 
-    <section class="linha-do-tempo">
+    <section class="linha-do-tempo" id="linha-do-tempo">
         <h2>LINHA DO TEMPO</h2>
 
-        <div class="timeline-content"></div>
+        <div class="timeline-content">
+          <p>Acompanhe a evolução dos sistemas operacionais ao longo 
+            do tempo, desde os primeiros dias da computação até os 
+            sistemas modernos que usamos hoje.</p>
+
+            <div class="timeline-image">
+                <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2%3A2PACX-1vTmpzYWxT8_XmVrs109D_ZGN7QC7hbV1lMIICVWQ7_ZJASN42fBc58cP_Y__Q8YaGSrklt6btD-ty_6&font=Default&lang=pt-br&initial_zoom=2&width=100%25&height=650'
+                 width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen 
+                 frameborder='0'></iframe>
+            </div>
+        </div>
       
     </section>
 
-    
-    
+    <script src='/assets/js/animations.js'></script>
 </body>
 </html>
